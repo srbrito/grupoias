@@ -1,7 +1,12 @@
-//configs
+//Configs
 @import "./config/_medias.scss";
 
 //Componentes
 @import "./components/_button.scss";
 @import "./components/_banner.scss";
+@import "./components/_header.scss";
+@import "./components/_cards.scss";
+
+//Estrutura
+@import "./pages/_index.scss"
 

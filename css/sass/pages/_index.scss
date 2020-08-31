@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'esphimereregular';
+    src: url('/.../../font/esphimere-webfont.woff2') format('woff2'),
+         url('/.../../font/esphimere-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family:'esphimereregular';
+    font-size:16px;
+}
+.case1{
+    width: 100%;
+    background-color: #e9e9e9;
+
+    &::after{
+        content: "";
+        border-top: 2px solid #e93638;
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        margin-bottom: 2%;
+    }
+    .main-title{
+        color: #444;
+        margin: 0 0 65px 0;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 4%;
+    
+        &:after{
+            content: "";
+            border-top: 2px solid #e93638;
+            width: 30%;
+            position: absolute;
+            top: 100px;
+            left:  35.5%;
+        }
+    }    
+}
+.case2{
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+
+    .main-title{
+        color: white;
+        margin: 0 0 65px 0;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 4%;
+    
+        &:after{
+            content: "";
+            border-top: 2px solid #e93638;
+            width: 20%;
+            position: absolute;
+            top: 100px;
+            left:  40%;
+        }
+    }
+    
+    &::after{
+        content: "";
+        border-top: 2px solid white;
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        margin-bottom: 2%;
+    }
+}

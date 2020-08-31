@@ -21,6 +21,9 @@
 .carousel {
   height: 100vh;
 }
+.carousel-indicators .active {
+  color: #e93638;
+}
 .carousel-inner .carousel-item_img {
   background-position: center;
   background-size: cover;
@@ -36,18 +39,192 @@
   width: 100%;
   height: 100%;
   background: black;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, black 100%);
 }
 .carousel-inner .carousel-item .carousel-caption {
   text-align: left;
+  top: 55%;
+}
+.carousel-inner .carousel-item .carousel-caption_title {
+  margin: 0 0 25px 15px;
+  font-size: 50px;
 }
 .carousel-inner .carousel-item .carousel-caption_text {
   margin: 15px 0 60px;
   font-size: 18px;
   line-height: 24px;
 }
-.carousel-control-next .fas, .carousel-control-prev .fas {
-  font-size: 42px;
+.carousel-inner .carousel-item .carousel-caption .main-btn {
+  text-align: center;
+  margin: 0 0 0 44.5%;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+}
+.navbar.fixed-top {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.navbar.show {
+  height: 100vh;
+  background-color: #302f2f;
+  z-index: 999;
+  align-items: start;
+}
+.navbar-toggler:focus {
+  outline: 0;
+}
+.navbar-toggler_menu {
+  color: white;
+  font-size: 16px;
+  border: 1px solid #e93638;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px 15px;
+}
+@media screen and (min-width: 992px) {
+  .navbar-collapse .navbar-nav .nav-item .nav-link .fas, .navbar-collapse .navbar-nav .nav-item .nav-link .far {
+    display: none;
+  }
+}
+.navbar-collapse .navbar-nav .nav-item :hover {
+  border: 1px solid #e93638;
+  color: #c0c0c0;
+  transition: border-color 0.1s ease;
+  border-radius: 3px;
+}
+.navbar-collapse .navbar-nav .nav-item .active {
+  border: 1px solid #e93638;
+  border-radius: 3px;
+}
+.navbar-collapse.show {
+  text-align: center;
+  padding: 30px 0;
+}
+.navbar-collapse.show .navbar-nav .nav-item {
+  border: 1px solid #e93638;
+  margin: 10px;
+}
+.navbar-collapse.show .navbar-nav .nav-item .nav-link .fas, .navbar-collapse.show .navbar-nav .nav-item .nav-link .far {
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .navbar-collapse.show .navbar-nav .nav-item .nav-link .fas, .navbar-collapse.show .navbar-nav .nav-item .nav-link .far {
+    display: none;
+  }
+}
+
+.card {
+  margin: 0 0 10% 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white;
+  text-align: center;
+}
+.card-subtitle {
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 2px solid #e93638;
+  margin-bottom: 5%;
+}
+.card-text {
+  margin: 2% 0 10% 0;
+  text-align: justify;
+}
+.card-link {
+  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #e93638;
+  border-radius: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.card-link:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #e93638;
+  border-color: #e93638;
+}
+
+@font-face {
+  font-family: "esphimereregular";
+  src: url("/.../../font/esphimere-webfont.woff2") format("woff2"), url("/.../../font/esphimere-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "esphimereregular";
+  font-size: 16px;
+}
+
+.case1 {
+  width: 100%;
+  background-color: #e9e9e9;
+}
+.case1::after {
+  content: "";
+  border-top: 2px solid #e93638;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  margin-bottom: 2%;
+}
+.case1 .main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 4%;
+}
+.case1 .main-title:after {
+  content: "";
+  border-top: 2px solid #e93638;
+  width: 30%;
+  position: absolute;
+  top: 100px;
+  left: 35.5%;
+}
+
+.case2 {
+  width: 100%;
+  background-color: #2b2b2b;
+}
+.case2 .main-title {
+  color: white;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 4%;
+}
+.case2 .main-title:after {
+  content: "";
+  border-top: 2px solid #e93638;
+  width: 20%;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+}
+.case2::after {
+  content: "";
+  border-top: 2px solid white;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  margin-bottom: 2%;
 }
 
 /*# sourceMappingURL=estiloIAS.css.map */

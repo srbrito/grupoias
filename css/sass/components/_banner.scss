@@ -1,6 +1,13 @@
 .carousel {
     height: 100vh;
 
+    &-indicators{
+
+        .active{
+            color: #e93638;
+        }
+    }
+
     &-inner {
 
         .carousel-item {
@@ -19,26 +26,30 @@
                     width: 100%;
                     height: 100%;
                     background: rgb(0,0,0);
-                    background: linear-gradient(180deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,1) 100%);
+                    background: linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,1) 100%);
                 }
             }
 
             .carousel-caption {
                 text-align: left;
+                top: 55%;
+
+                &_title{
+                    margin: 0 0 25px 15px;
+                    font-size: 50px;
+                }
 
                 &_text {
                     margin: 15px 0 60px;
                     font-size: 18px;
                     line-height: 24px;
                 }
+
+                .main-btn{
+                    text-align: center;
+                    margin: 0 0 0 44.5%;
+                }
             }
-        }
-    }
-
-    &-control-next, &-control-prev{
-
-        .fas{
-            font-size: 42px;
         }
     }
 }

@@ -1,0 +1,94 @@
+.navbar{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+
+    &.fixed-top{
+        position: fixed;
+        background-color: rgba(0,0,0,.65);
+    }
+
+    &.show{
+        height: 100vh;
+        background-color: #302f2f;
+        z-index: 999;
+        align-items: start;
+    }
+
+    &-toggler{
+        &:focus{
+            outline: 0;
+        }
+
+        &_menu{
+            color: white;
+            font-size: 16px;
+            border: 1px solid #e93638;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+    }
+
+    &-collapse{
+        
+        .navbar-nav{
+
+            .nav-item{
+                
+                .nav-link{
+                    color: white;
+                    border: 1px solid transparent;
+                    padding: 10px 15px;
+                    
+                    .fas, .far{
+                        @include media-min992{
+                            display: none;
+                        }
+                    }
+                }
+
+                :hover{
+                    border: 1px solid #e93638;
+                    color: #c0c0c0;
+                    transition: border-color 0.1s ease;
+                    border-radius: 3px;
+
+                }
+                
+                .active{
+                    border: 1px solid #e93638;
+                    border-radius: 3px;  
+                }
+            }
+        }
+
+        &.show{
+            text-align:center;
+            padding: 30px 0;
+
+            .navbar-nav{              
+
+                .nav-item{                  
+                    border: 1px solid #e93638; 
+                    margin: 10px;
+                    
+
+                    .nav-link{
+                           
+                        .fas, .far{
+                            color: white;
+                            margin: 10px;
+                            text-align: center;
+
+                            @include media-min992{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

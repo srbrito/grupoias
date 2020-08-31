@@ -1,87 +1,4 @@
-@font-face {
-    font-family: 'esphimereregular';
-    src: url('/.../../font/esphimere-webfont.woff2') format('woff2'),
-         url('/.../../font/esphimere-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-*{
-    font-family:'esphimereregular';
-    font-size:15px;
-}
-/*Barra de navegação*/
-#navbar1 li a{
-    border: 1px solid transparent;
-    padding: 10px 15px;
-    border-radius: 3px;
-}
-#navbar1 li a.active , #navbar1 li a:hover{
-    border: 1px solid #e93638; 
-    transition: border-color 0.1s ease;
-    border-radius: 3px;
-}
-/*#navbar1 li #login{
-    border: 1px solid white;
-    color: white;
-    background-color: transparent;
-    border-radius: 25px;
-}
-#navbar1 #login{
-    padding-left: 30px;
-    padding-right: 30px;
-} 
-#navbar1 #login:hover{
-    background-color: #e93638;
-    color: white;
-}*/
-/*Carousel informativo*/
-/* .carousel-caption h2{
-    text-align: center;
-}
-.container-fluid{
-    padding: 0;
-}
-#carouselSite .carousel-inner, #carouselSite .carousel-item{
-    height: 65vh;
-}
-#carouselSite .carousel-caption{
-    top: 30%;
-}
-#carouselSite .carousel-caption h2{
-    font-size: 50px;
-    margin-bottom: 25px;
-    color: white;
-}
-#carouselSite .carousel-caption p{
-    font-size: 22px;
-    font-weight: 200;
-    margin-bottom: 50px;
-}
-#carouselSite .carousel-item img{
-    object-fit: cover;
-}
-.carousel-indicators li{
-    width: 60px;
-}
-.carousel-indicators .active{
-    background-color:#e93638;
-}
-#prev{
-    height: 60px;
-} */
-/*Sobre a IAS*/
-.case1{
-    width: 100%;
-    background-color: #e9e9e9;
-}
-.case1::after{
-    content: "";
-    border-top: 2px solid #e93638;
-    width: 60%;
-    position: absolute;
-    left: 20%;
-    margin-bottom: 2%;
-}
+
 #about-list{
     list-style: none;
     padding-left: 10px;
@@ -92,21 +9,6 @@
 #about-list i{
     color: #e93638;
     margin-right: 6px;
-}
-.main-title{
-    color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 4%;
-}
-.main-title::after{
-    content: "";
-    border-top: 2px solid #e93638;
-    width: 30%;
-    position: absolute;
-    top: 100px;
-    left:  35.5%;
 }
 .about-title{
     font-size: 20px;
